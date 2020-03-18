@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <script src='../praticandoDom/js/app.js'></script>
+    <script src='../praticandoDom/js/class.js'></script>
+    <script src='../praticandoDom/js/main.js'></script>
+</head>
+
+<body>
+
+
+        <form onsubmit="app.adicionar()">
+            <p>
+                <label>Tipo: </label>
+                <select name="tipoImovel">
+                    <option value="Casa">Casa</option>
+                    <option value="Apartamento">Apartamento</option>
+                </select>
+            </p>
+            <p>
+                <label>Área: </label>
+                <input type="text" name="area"/>
+            </p>
+            <p>
+                <label>Alugado: </label>
+                <input type="radio" value="sim" name="alugado" />Sim
+                <input type="radio" value="nao" name="alugado" checked />Não
+            </p>
+            <p>
+                <button type="submit">Adicionar</button>
+                <button type="button" onclick="app.limparForm()">Limpar</button>
+            </p>
+        </form>
+
+        <h3>Imóveis cadastrados</h3>
+
+        <ul id="imoveisCadastrados">
+           
+        </ul>
+
+
+</body>
+
+</html>

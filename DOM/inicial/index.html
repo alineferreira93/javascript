@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <script src='../DOM/js/main.js'></script>
+</head>
+
+<body>
+
+   <!-- <form method="POST">
+        <button name="botão" type="button" onclick="clickMe()">Clique aqui</button></br></br>
+        <label for="Focus">Focus</label>
+        <input type="text" name="focus" onfocus="focusMe()" /></br></br>
+        <label for="Blur">Blur</label>
+        <input type="text" name="blur" onblur="blurMe()" /></br></br>
+        <label for="Change">Change</label>
+        <input type="text" name="change" onchange="changeMe()" /></br></br>
+        <p onmouseover="overMe()">Passe o mouse aqui</p>
+
+    </form>
+    -->
+
+    <form method="POST">
+        <button onclick="showById()" >Exibir</button></br></br>
+
+        <label for="Focus">Nome:</label>
+        <input type="text" name="nomeCompleto" id="nome" onfocus="showByTagName()"/></br></br>
+
+        <div id="telefones">
+            <label for="Blur">Telefone 1</label>
+            <input type="text" name="telefone" id="telefone1" onmouseover="showByQuery()" /></br></br>
+
+            <label for="Blur">Telefone 2</label>
+            <input type="text" name="telefone" id="telefone2" onmouseover="showByQuery()" /></br></br>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

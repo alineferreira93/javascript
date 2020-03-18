@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <script src='../seletores/js/main.js'></script>
+</head>
+<body>
+    <form>
+        <p>
+            <label>Nome: </label>
+            <input type="text" name="nome"/>
+        </p>
+
+        <p>
+            <label>Cor primária: </label>
+            <select name="cor">
+                <option value="amarelo">Amarelo</option>
+                <option value="azul">Azul</option>
+                <option value="vermelho">Vermelho</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Gosta de programar? </label>
+            <input type="radio" value="sim" name="gosta-de-programar" />Sim
+            <input type="radio" value="nao" name="gosta-de-programar" />Não
+        </p>
+
+        <p>
+            <label>Conhecimentos em programação web: </label>
+            <input type="checkbox" value="html" name="opcoes-dev" />HTML
+            <input type="checkbox" value="js" name="opcoes-dev" />Javascript
+            <input type="checkbox" value="css" name="opcoes-dev" />CSS
+            <input type="checkbox" value="express" name="opcoes-dev" />Express
+        </p>
+
+        <button type="button" onclick="showInfo()">Mostrar Informações</button>
+    </form>
+</body>
+</html>
